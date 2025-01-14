@@ -1,7 +1,7 @@
 {
   "name": "eofol-head",
   "version": "1.0.0",
-  "description": "",
+  "description": "Render HTML templates from boilerplate including helmet for head tag",
   "license": "MIT",
   "author": "Jakub Eliáš <wurducius@gmail.com>",
   "type": "commonjs",
