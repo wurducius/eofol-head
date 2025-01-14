@@ -1,4 +1,4 @@
-import { join } from "node:path"
-import { rimrafSync } from "rimraf"
+const { join } = require("node:path")
+const { rimrafSync } = require("rimraf")
 
 rimrafSync(join(process.cwd(), "dist"))

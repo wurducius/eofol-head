@@ -18,6 +18,8 @@ export interface HeadData {
   fontStyle?: string
   style?: string
   language?: string
+  pathPrefixJS?: string
+  pathPrefixCSS?: string
 }
 
 // @TODO typing

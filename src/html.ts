@@ -1,4 +1,6 @@
 import { Attributes, Content } from "./types"
+import { jsonToHtml } from "./parser"
+import { JSONContent } from "html-to-json-parser/dist/types"
 
 export const html = (tagname: string, content?: Content, attributes?: Attributes) => ({
   type: tagname,
@@ -6,7 +8,4 @@ export const html = (tagname: string, content?: Content, attributes?: Attributes
   attributes: attributes ?? {},
 })
 
-export const renderHtml = (
-  html: { type: string; attributes: Attributes; content: Content },
-  // @ts-ignore
-): Promise<string> => jsonToHtml(html, true)
+export const renderHtml = (html: JSONContent | string): Promise<string> => jsonToHtml(html, true) as Promise<string>
